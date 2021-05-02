@@ -9,8 +9,8 @@ services:
 
     ports:
       - 5432:5432
-  # api:
-  #   build: .
-  #   command: npm run start
-  #   depends_on:
-  #       - postgres
+  api:
+    build: .
+    command: npm run start
+    depends_on:
+      - postgres
