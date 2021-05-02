@@ -16,6 +16,7 @@ class RestaurantController {
       }
 
       const result = await runQuery(sql`SELECT * FROM restaurantes`);
+      console.log({ result });
       return res.json(result);
     } catch (error) {
       console.error(error);
@@ -27,7 +28,6 @@ class RestaurantController {
 
   async store(req, res) {
     try {
-      console.log(req.body);
       const {
         nome_oficial,
         nome_fantasia,

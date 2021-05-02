@@ -52,6 +52,11 @@ const runMigrations = async () => {
       "data_validade" date
     );
 
+    id_cliente
+    numero
+    nome_cadastrado
+    data_validade
+    
     CREATE TABLE "entregadores" (
       "id_entregador" SERIAL UNIQUE PRIMARY KEY,
       "nome" varchar,
