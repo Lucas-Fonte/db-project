@@ -1,0 +1,17 @@
+{
+  "name": "db_project",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "migrate": "node src/database/migrations.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@databases/pg": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "typeorm": "^0.2.32"
+  }
+}
